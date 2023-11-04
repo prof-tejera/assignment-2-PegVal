@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/assignment-2-PegVal/static/css/main.1a89913d.css",
+    "main.js": "/assignment-2-PegVal/static/js/main.08d0e718.js",
+    "static/js/787.a2889221.chunk.js": "/assignment-2-PegVal/static/js/787.a2889221.chunk.js",
+    "index.html": "/assignment-2-PegVal/index.html",
+    "main.1a89913d.css.map": "/assignment-2-PegVal/static/css/main.1a89913d.css.map",
+    "main.08d0e718.js.map": "/assignment-2-PegVal/static/js/main.08d0e718.js.map",
+    "787.a2889221.chunk.js.map": "/assignment-2-PegVal/static/js/787.a2889221.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a89913d.css",
+    "static/js/main.08d0e718.js"
+  ]
+}
