@@ -217,13 +217,13 @@ const Tabata = () => {
             <div>{btnTimer[btnId]}</div>
           </div>
         </div>
-      </div>
 
-      <div class="timerMenu">
-        <Link to="/">
-          <button className="button-nav">Back to config</button>
-        </Link>
-        {btnTimer}
+        <div class="timerMenu">
+          <Link to="/">
+            <button className="button-nav">Back to config</button>
+          </Link>
+          {btnTimer}
+        </div>
       </div>
     </>
   );
