@@ -19,9 +19,9 @@ const Editor = () => {
   const navigate = useNavigate();
   const { selectedPost, savePost } = useContext(BlogContext);
   const [title, setTitle] = useState(selectedPost?.title ?? "");
-  const [duration, setDuration] = useState(selectedPost?.duration ?? "0");
-  const [repeat, setNumRepeat] = useState(selectedPost?.repeat ?? "0");
-  const [pause, setPause] = useState(selectedPost?.pause ?? "0");
+  const [duration, setDuration] = useState(selectedPost?.duration ?? "");
+  const [repeat, setNumRepeat] = useState(selectedPost?.repeat ?? "");
+  const [pause, setPause] = useState(selectedPost?.pause ?? "");
 
   return (
     <>
