@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+import BlogProvider from "./BlogProvider";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Blog from "./CounterContext";
+import DisplayDuration from "./DisplayDuration";
+import Tabata from "./Tabata2";
+import Editor from "./Editor";
+import Documentation from "./DocumentationView";
+
+const Inner = () => {
+  const commonRoutes = (
+    <>
+      <Route
+        path="/"
+        element={[<DisplayDuration />, <Blog />]}
+      />
+      <Route
+        path="/tabata"
+        element={[<DisplayDuration />, <Tabata />]}
+      />
+      <Route
+        path="/document"
+        element={<Documentation />}
+      />
+      <Route
+        path="/add"
+        element={[<DisplayDuration />, <Editor />]}
+      />
+    </>
   );
-}
+  return <Routes>{commonRoutes}</Routes>;
+};
+
+const App = () => {
+  return (
+    <BlogProvider>
+      <BrowserRouter>
+        <Inner />
+      </BrowserRouter>
+    </BlogProvider>
+  );
+};
 
 export default App;
